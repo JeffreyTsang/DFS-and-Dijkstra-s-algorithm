@@ -1,0 +1,74 @@
+
+//    int getLocation();        // The unique identifier associated with the planet
+//    NodeStatus[] neighbors(); // An array of all neighbors of the planet
+//    double getPing();                  // The strength of the distress signal on the planet
+//    boolean foundSpaceship(); // true iff the ship is currently on Planet X
+//        void moveTo(int id);     // Move to the planet whose unique identifier is id
+//                             //  Must be a neighbor of this planet
+//    Class NodeStatus has the following methods. Functions equals and hashCode are also there, but you
+//    definitely do not need them.
+//     
+//       int getId()              // The unique identifier of this planet (i.e. node)
+//       int getName()          // The name of this planet
+//       getPingToTarget() //  The strength of the distress signal on this planet
+//       compareTo(other)   //  Compare this nodes's distress signal to other's distress signal,
+//                         // returning a number <0, 0, or >0 as usual
+//   
+//      public static void dfsWalk(State s) {
+//   	 Node u= s.standingOn();
+//   	 Visit u;
+//   	 for each neighbor w of u {
+//   	if (w is unvisited) {
+//   	 s.moveTo(w);
+//   	 dfsWalk(s);
+//   	 s.moveTo(u);
+//   	}
+//   	} }
+//    	go back to your starting node
+
+//// 
+
+//    	 
+//    	In addition, all the method of class Node are at your disposal.
+//    	/** Return an immutable set of edges leaving this node. */
+//        public Set<Edge> getExits() {
+    	
+//    	/** Return a map of neighboring Nodes to the lengths of the Edges
+//         * connecting them to this Node. */
+//        public HashMap<Node, Integer> getNeighbors() {
+    	
+//    	 /** Return true iff r is connected to this Node. */
+//        public boolean isExit(Edge r) {
+    	
+//    	/** Return false if other.equals(this). Otherwise, return true iff there is
+//        * an edge connecting this planet and other. */
+//        public boolean isConnectedTo(Node other) {
+    	
+//    	/** Return the current amount of gems on this planet. */
+//        public int getNumGems() {
+
+
+//    	getCurrentNode(): The planet (node ) on which the ship is standing
+//    	getEarth():               Node Earth
+//    	getNodes():               the set of all nodes in the graph
+//    	getDistanceLeft() The max distance that must be traveled on the return to Earth
+//    	                  Travel more than tis and the return fails with a score of 0
+//    	moveTo(n)         Move the ship to node n, which must be adjacent.
+    	
+    	// sale a number- modify min path
+    	// at each stage- make a list of greatest mber of ems go to the greatest?
+    	
+//    	HashMap<Node, Integer>edges=s.getCurrentNode().getNeighbors();
+    	//max number of gems
+    	//sort nodes in graph based by ges
+    	
+    	
+    	//    	List<Node> l =MinPath.minPath(s.getCurrentNode(),s.getEarth());
+//    	for (Node x:l.subList(1, l.size())) {
+//    		s.moveTo(x);
+//    	}
+    	
+    	    	//Pull 
+    	//min path to that node
+    	//if its too far min path back home
+    	//minpath to the next greatest node

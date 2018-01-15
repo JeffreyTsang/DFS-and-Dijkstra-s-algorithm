@@ -1,0 +1,2 @@
+# JAVA-Spaceship-
+Search algorithm
